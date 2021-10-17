@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 17 11:23:56 2021
+
+@author: hp
+Nama: AGFAN HERRU PRATAMA HENDARSIN
+NIM : 064002100043
+
+"""
+
+bulan = int(input("Masukan Jumlah Bulan  (1-12) ?"))
+if bulan in [1,2,3,4,5,6,7,8,9,10,11,12]:
+    if bulan == 2:
+        tahun = int(input("Masukan Tahun:"))
+        if (tahun%4==0):
+            print("29 hari")
+        else:
+            print("28 hari")
+    else:
+            if bulan==1 or bulan==3 or bulan==5 or bulan==7 or bulan==9 or bulan==11:   
+                print("31 hari")
+            else:
+                print("30 hari")
+else:
+            print('invalid')
